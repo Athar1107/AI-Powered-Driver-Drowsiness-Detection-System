@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-driver-frontend
+    runtime: static
+    rootDir: FRONTEND
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
