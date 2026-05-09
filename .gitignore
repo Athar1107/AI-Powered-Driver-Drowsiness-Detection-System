@@ -1,0 +1,40 @@
+# OS and editor files
+desktop.ini
+.DS_Store
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+env/
+
+# Node / Vite
+FRONTEND/node_modules/
+FRONTEND/dist/
+FRONTEND/*.log
+
+# Logs and caches
+*.log
+*.cache
+
+# Generated training and inference outputs
+PythonScript/runs/*
+!PythonScript/runs/detect/
+PythonScript/runs/detect/*
+!PythonScript/runs/detect/drowsiness_v1-2/
+PythonScript/runs/detect/drowsiness_v1-2/*
+!PythonScript/runs/detect/drowsiness_v1-2/weights/
+PythonScript/runs/detect/drowsiness_v1-2/weights/*
+!PythonScript/runs/detect/drowsiness_v1-2/weights/best.pt
+!PythonScript/runs/detect/drowsiness_v1-2/weights/best.onnx
+PythonScript/video_results/
+PythonScript/webcam_dataset/
+
+# Local demo recordings
+*.mp4
+*.avi
+*.mov
+*.mkv
